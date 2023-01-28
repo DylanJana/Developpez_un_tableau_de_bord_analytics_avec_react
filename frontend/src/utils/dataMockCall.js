@@ -1,8 +1,8 @@
 // Import datas
 import {
+  USER_MAIN_DATA,
   USER_ACTIVITY,
   USER_AVERAGE_SESSIONS,
-  USER_MAIN_DATA,
   USER_PERFORMANCE
 } from './dataMock';
 

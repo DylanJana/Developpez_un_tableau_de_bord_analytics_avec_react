@@ -1,7 +1,8 @@
+// Import react router dom method
 import { NavLink } from "react-router-dom";
+// Import assets
 import karl from '../../assets/images/karl.webp';
 import cecilia from '../../assets/images/cecilia.webp';
-
 // Import css of Home.js
 import './Home.css';
 
