@@ -1,0 +1,50 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #282D30;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active,
+a:visited {
+  color: #282D30;
+}
+a:hover {
+  color: #FF0101;
+  font-weight: 500;
+}
+
+/*** Colors ***/
+.text--secondary {
+  color: #FF0101;
+}
+
+/*** Containers ***/
+.l-container--md {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+/*** Txt ***/
+.title--xl {
+  font-size: 3rem;
+}
+
+.title--sm {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+/*** Text align ***/
+.text--center {
+  text-align: center;
+}
+
+/*** Margins ***/
+.mb--xs {
+  margin-bottom: 8px;
+}
