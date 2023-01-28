@@ -38,6 +38,12 @@ a.active {
   padding-right: 60px;
   padding-left: 60px;
 }
+
+.l-container--full {
+  display: flex;
+  column-gap: 107px;
+  padding-right: 90px;
+}
 /*** Txt ***/
 .title--xl {
   font-size: 3rem;

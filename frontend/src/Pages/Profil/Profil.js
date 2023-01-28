@@ -1,10 +1,16 @@
 import Navbar from "../../Components/Navbar/Navbar";
+import VerticalNav from "../../Components/VerticalNav/VerticalNav";
+import Graphs from "../../Components/Graphs/Graphs";
 
 function Profil() {
   return (
-    <div>
+    <main>
       <Navbar />
-    </div>
+      <section className="l-container--full">
+        <VerticalNav />
+        <Graphs />
+      </section>
+    </main>
   )
 }
 
