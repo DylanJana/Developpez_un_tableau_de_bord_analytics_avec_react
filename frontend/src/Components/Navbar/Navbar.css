@@ -1,0 +1,24 @@
+.header {
+  padding: 18px 91px 12px 28px;
+  background-color: #020203;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 149px;
+  max-width: 2000px;
+  margin: auto;
+}
+
+.nav {
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}

@@ -20,3 +20,7 @@
   filter: grayscale(0);
   transition: filter 0.5s ease-in-out;
 }
+
+.users a:hover p {
+  color: #FF0101;
+}

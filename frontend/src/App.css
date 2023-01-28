@@ -8,18 +8,26 @@ a {
   text-decoration: none;
 }
 
-a:active,
-a:visited {
-  color: #282D30;
-}
 a:hover {
   color: #FF0101;
   font-weight: 500;
 }
 
+a.active {
+  color: #FF0101;
+  cursor: default;
+}
+
 /*** Colors ***/
+.text--primary {
+  color: #282D30;
+}
 .text--secondary {
   color: #FF0101;
+}
+
+.text--white {
+  color: #fff;
 }
 
 /*** Containers ***/

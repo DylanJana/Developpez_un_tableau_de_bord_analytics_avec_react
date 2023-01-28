@@ -19,7 +19,7 @@ function Home() {
             <div className="users__pic mb--xs">
               <img src={karl} alt="Profil de l'utilisateur" />
             </div>
-            <p className="text--center title--sm">Je suis Karl</p> 
+            <p className="text--center title--sm text--primary">Je suis Karl</p> 
           </NavLink>
         </div>
         <div>
@@ -27,7 +27,7 @@ function Home() {
             <div className="users__pic">
               <img src={cecilia} alt="Profil de l'utilisateur" />
             </div>
-            <p className="text--center title--sm">Je suis Cecilia</p>
+            <p className="text--center title--sm text--primary">Je suis Cecilia</p>
           </NavLink>
         </div>
       </div>

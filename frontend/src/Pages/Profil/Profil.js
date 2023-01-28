@@ -1,7 +1,9 @@
+import Navbar from "../../Components/Navbar/Navbar";
+
 function Profil() {
   return (
     <div>
-      <h1>Page Profil</h1>
+      <Navbar />
     </div>
   )
 }
