@@ -1,19 +1,19 @@
 import axios from "axios";
 
 const apiBase = axios.create({
-  baseURL: `http://localhost:3001/`
+  baseURL: `http://localhost:3000`
 });
 
 const baseURL = apiBase.defaults.baseURL;
 
 /** Get user Infos
- * @param {string} User ID
+ * @param {string} 
  * @returns {Array} Data User info
  */
 
 export const getUserInfos = async(id) => {
   try {
-    const result = await apiBase.get(`${baseURL}/user/${id}`);
+    const result = await apiBase.get(`/user/${id}`);
     return result.data;
   } catch(err) {
       console.log(err)
@@ -27,7 +27,7 @@ export const getUserInfos = async(id) => {
 
 export const getUserActivity = async(id) => {
   try {
-    const result = await apiBase.get(`${baseURL}/user/${id}/activity`);
+    const result = await apiBase.get(`/user/${id}/activity`);
     return result.data;
   } catch(err) {
       console.log(err)
@@ -41,7 +41,7 @@ export const getUserActivity = async(id) => {
 
 export const getUserAverageSessions = async(id) => {
   try {
-    const result = await apiBase.get(`${baseURL}/user/${id}/average-sessions`);
+    const result = await apiBase.get(`/user/${id}/average-sessions`);
     return result.data;
   } catch(err) {
       console.log(err)
@@ -55,7 +55,7 @@ export const getUserAverageSessions = async(id) => {
 
 export const getUserPerformance = async(id) => {
   try {
-    const result = await apiBase.get(`${baseURL}/user/${id}/performance`);
+    const result = await apiBase.get(`/user/${id}/performance`);
     return result.data;
   } catch(err) {
       console.log(err)

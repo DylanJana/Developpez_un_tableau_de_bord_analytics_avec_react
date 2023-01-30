@@ -41,16 +41,34 @@ a.active {
 
 .l-container--full {
   display: flex;
-  column-gap: 107px;
   padding-right: 90px;
+}
+
+/*** Flex ***/
+.flex {
+  display: flex;
+}
+
+.justify-content--center {
+  justify-content: center;
+}
+
+.align-items--center {
+  align-items: center;
 }
 /*** Txt ***/
 .title--xl {
   font-size: 3rem;
+  font-weight: 500;
 }
 
 .title--sm {
   font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.suptitle {
+  font-size: 0.75rem;
   font-weight: 500;
 }
 /*** Text align ***/
@@ -61,4 +79,8 @@ a.active {
 /*** Margins ***/
 .mb--xs {
   margin-bottom: 8px;
+}
+
+.mx--auto {
+  margin: auto;
 }

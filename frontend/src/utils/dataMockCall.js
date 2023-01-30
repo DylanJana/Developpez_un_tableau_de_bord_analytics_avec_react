@@ -8,13 +8,13 @@ import {
 
 /**
  * Get Full data of user
- * @param {number} id User id
+ * @param {number} User id
  * @returns {object} Response
  */
 
 export const getUserInfos = async(id) => {
   try {
-    const result = USER_MAIN_DATA.find((elm) => elm.id === id)
+    const result = USER_MAIN_DATA.find((elm) => elm.id == id)
     return {data:result}
 
   } catch (err) {
@@ -30,7 +30,7 @@ export const getUserInfos = async(id) => {
 
 export const getUserActivity = async(id) => {
   try {
-    const result = USER_ACTIVITY.find((elm) => elm.id === id)
+    const result = USER_ACTIVITY.find((elm) => elm.id == id)
     return {data:result}
 
   } catch (err) {
@@ -46,7 +46,7 @@ export const getUserActivity = async(id) => {
 
 export const getUserAverageSessions = async(id) => {
   try {
-    const result = USER_AVERAGE_SESSIONS.find((elm) => elm.id === id)
+    const result = USER_AVERAGE_SESSIONS.find((elm) => elm.id == id)
     return {data:result}
 
   } catch (err) {
@@ -62,7 +62,7 @@ export const getUserAverageSessions = async(id) => {
 
 export const getUserPerformance = async(id) => {
   try {
-    const result = USER_PERFORMANCE.find((elm) => elm.id === id)
+    const result = USER_PERFORMANCE.find((elm) => elm.id == id)
     return {data:result}
 
   } catch (err) {

@@ -1,6 +1,6 @@
 import Navbar from "../../Components/Navbar/Navbar";
 import VerticalNav from "../../Components/VerticalNav/VerticalNav";
-import Graphs from "../../Components/Graphs/Graphs";
+import Main from "../../Components/Main/Main";
 
 function Profil() {
   return (
@@ -8,7 +8,7 @@ function Profil() {
       <Navbar />
       <section className="l-container--full">
         <VerticalNav />
-        <Graphs />
+        <Main />
       </section>
     </main>
   )

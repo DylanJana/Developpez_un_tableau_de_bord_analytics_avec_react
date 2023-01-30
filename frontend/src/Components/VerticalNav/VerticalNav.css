@@ -1,4 +1,26 @@
 .vertical-nav {
-  padding: 59px 26px 59px 26px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 164px;
+  padding: 59px 0px 120px 0px;
   background-color: #020203;
+}
+
+.vertical-nav__item {
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.vertical-nav-box {
+  height: 64px;
+  width: 64px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+.vertical-nav-box__icon svg {
+  color: #FF0101;
+}
+
+.copiryght {
+  transform: rotate(-90deg);
 }
