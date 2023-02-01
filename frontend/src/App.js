@@ -5,7 +5,6 @@ import {Routes, Route} from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import Profil from './Pages/Profil/Profil';
 import Error404 from './Pages/Error404/Error404';
-import Comming from './Pages/Comming/Comming';
 
 function App() {
   return (
@@ -14,8 +13,6 @@ function App() {
         <Route path='/' element={<Home />} />
         {/** Dynamically path with user id */}
         <Route path='/user/:id' element={<Profil />} />
-        {/** Page to Comming */}
-        <Route path='/comming-soon' element={<Comming />} />
         {/** This route is use when page doesn't exist */}
         <Route path='*' element={<Error404 />} />
       </Routes>

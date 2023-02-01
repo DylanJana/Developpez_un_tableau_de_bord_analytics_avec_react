@@ -22,3 +22,8 @@
   list-style: none;
   justify-content: space-between;
 }
+
+.nav__list li p:hover {
+  cursor: pointer;
+  color: #FF0101;
+}

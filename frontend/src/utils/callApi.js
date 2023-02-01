@@ -13,7 +13,7 @@ const baseURL = apiBase.defaults.baseURL;
 
 export const getUserInfos = async(id) => {
   try {
-    const result = await apiBase.get(`/user/${id}`);
+    const result = await apiBase.get(`${baseURL}/user/${id}`);
     return result.data;
   } catch(err) {
       console.log(err)
@@ -27,7 +27,7 @@ export const getUserInfos = async(id) => {
 
 export const getUserActivity = async(id) => {
   try {
-    const result = await apiBase.get(`/user/${id}/activity`);
+    const result = await apiBase.get(`${baseURL}/user/${id}/activity`);
     return result.data;
   } catch(err) {
       console.log(err)
@@ -41,7 +41,7 @@ export const getUserActivity = async(id) => {
 
 export const getUserAverageSessions = async(id) => {
   try {
-    const result = await apiBase.get(`/user/${id}/average-sessions`);
+    const result = await apiBase.get(`${baseURL}/user/${id}/average-sessions`);
     return result.data;
   } catch(err) {
       console.log(err)

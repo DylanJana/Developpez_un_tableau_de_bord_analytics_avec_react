@@ -33,10 +33,12 @@ function Main() {
   }
 
   let nameUser = data.userInfos.firstName;
+  // Get scoreUser
+  let scoreUser = data.score
 
   return (
     <section className='graphs-container'>
-      <HelloUser name={nameUser} />
+      <HelloUser name={nameUser} score={scoreUser} />
     </section>
   )
 }

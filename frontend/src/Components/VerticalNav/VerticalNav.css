@@ -17,9 +17,20 @@
   border-radius: 6px;
   background-color: #fff;
 }
+
+.vertical-nav-box:hover {
+  background-color: #FF0101;
+  cursor: pointer;
+}
+
 .vertical-nav-box__icon svg {
   color: #FF0101;
 }
+
+.vertical-nav-box:hover .vertical-nav-box__icon svg {
+  color: #fff;
+}
+
 
 .copiryght {
   transform: rotate(-90deg);

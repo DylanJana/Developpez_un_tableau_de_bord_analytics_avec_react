@@ -16,7 +16,7 @@ function Navbar() {
         <nav className="nav">
           <ul className="nav__list">
             <li>
-              <NavLink className={({isActive}) => isActive ? 'active title--sm' : 'title--sm text--white'} to='/'>
+              <NavLink className='title--sm text--white' to='/'>
                 Accueil
               </NavLink>
             </li>
@@ -26,14 +26,14 @@ function Navbar() {
               </NavLink>
             </li>
             <li>
-              <NavLink className={({isActive}) => isActive ? 'active title--sm' : 'title--sm text--white'} to='/comming-soon'>
+              <p className='title--sm text--white'>
                 Réglage
-              </NavLink>
+              </p>
             </li>
             <li>
-              <NavLink className={({isActive}) => isActive ? 'active title--sm' : 'title--sm text--white'} to='/comming-soon'>
+              <p className='title--sm text--white'>
                 Communauté
-              </NavLink>
+              </p>
             </li>
           </ul>
         </nav>
