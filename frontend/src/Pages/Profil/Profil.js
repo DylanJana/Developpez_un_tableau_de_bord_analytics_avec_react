@@ -2,12 +2,17 @@ import Navbar from "../../Components/Navbar/Navbar";
 import VerticalNav from "../../Components/VerticalNav/VerticalNav";
 import Main from "../../Components/Main/Main";
 
+// Import Specific css
+import './Profil.css';
+
 function Profil() {
   return (
     <main>
       <Navbar />
       <section className="l-container--full">
-        <VerticalNav />
+        <div className="vertical-nav-container">
+          <VerticalNav />
+        </div>
         <Main />
       </section>
     </main>

@@ -26,6 +26,10 @@ a.active {
   color: #FF0101;
 }
 
+.text--tiers {
+  color: #74798C;
+}
+
 .text--white {
   color: #fff;
 }
@@ -41,12 +45,16 @@ a.active {
 
 .l-container--full {
   display: flex;
-  padding-right: 90px;
+  width: 100%;
 }
 
 /*** Flex ***/
 .flex {
   display: flex;
+}
+
+.justify-content--space-between {
+  justify-content: space-between;
 }
 
 .justify-content--center {
@@ -67,6 +75,17 @@ a.active {
   font-weight: 500;
 }
 
+.title--xs {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.suptitle--md {
+  font-size: 0.87rem;
+  font-weight: 500;
+}
+
 .suptitle {
   font-size: 0.75rem;
   font-weight: 500;
@@ -77,6 +96,14 @@ a.active {
 }
 
 /*** Margins ***/
+.mb--xl {
+  margin-bottom: 80px;
+}
+
+.mb--lg {
+  margin-bottom: 40px;
+}
+
 .mb--xs {
   margin-bottom: 8px;
 }

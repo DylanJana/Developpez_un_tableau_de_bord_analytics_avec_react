@@ -6,6 +6,14 @@ import { useParams } from 'react-router-dom';
 import { getData } from '../../utils/getData';
 // Import Components
 import HelloUser from '../HelloUser/HelloUser';
+import NutritiveCard from '../NutritiveCard/NutritiveCard';
+
+// Import icons of NutritiveCard
+import energy from '../../assets/svg/energy.svg';
+import protein from '../../assets/svg/protein.svg';
+import glucides from '../../assets/svg/glucides.svg';
+import lipides from '../../assets/svg/lipides.svg';
+
 // Import css
 import './Main.css';
 /***
@@ -28,17 +36,50 @@ function Main() {
   },[id]);
 
   // If user I doesn't have data return null
-  if(data?.length === 0) {
+  if(data.length === 0) {
     return null;
   }
 
   let nameUser = data.userInfos.firstName;
+
   // Get scoreUser
-  let scoreUser = data.score
+  let scoreUser = data.score;
 
   return (
     <section className='graphs-container'>
       <HelloUser name={nameUser} score={scoreUser} />
+      <div className='graphs-grid flex justify-content--space-between'>
+        <div>
+          <div>Graph 1</div>
+          <div>
+            <div>Graph 2</div>
+            <div>Graph 3</div>
+            <div>Graph 4</div>
+          </div>
+        </div>
+        <div className='row-cards'> 
+          <NutritiveCard 
+            mesure={`${data.keyData.calorieCount}kCal`}
+            icon={energy}
+            label={"Calories"}
+            />
+            <NutritiveCard 
+            mesure={`${data.keyData.proteinCount}g`}
+            icon={protein}
+            label={"Protéines"}
+            />
+            <NutritiveCard 
+            mesure={`${data.keyData.carbohydrateCount}g`}
+            icon={glucides}
+            label={"Glucides"}
+            />
+            <NutritiveCard 
+            mesure={`${data.keyData.lipidCount}g`}
+            icon={lipides}
+            label={"Lipides"}
+            />
+        </div>
+      </div>
     </section>
   )
 }

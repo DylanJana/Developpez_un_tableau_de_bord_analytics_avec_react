@@ -1,0 +1,37 @@
+/* Row cards */
+.row-cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 39px;
+}
+
+.row-card {
+  column-gap: 24px;
+  padding: 32px;
+  border-radius: 5px;
+  background-color: #FBFBFB;
+}
+
+/*Box styling*/
+.card-box {
+  border-radius: 6px;
+  width: 60px;
+  height: 60px;
+}
+
+/*** Themes color ***/
+.t--secondary {
+  background-color: rgba(255, 0, 0, 0.06);
+}
+
+.t--tiers {
+  background-color: rgba(74, 184, 255, 0.1);
+}
+
+.t--quarts {
+  background-color: rgba(249, 206, 35, 0.10);
+}
+
+.t--fifth {
+  background-color: rgba(253, 81, 129, 0.10);
+}
