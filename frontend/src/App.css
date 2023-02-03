@@ -4,6 +4,10 @@ body {
   color: #282D30;
 }
 
+.no--scroll {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }

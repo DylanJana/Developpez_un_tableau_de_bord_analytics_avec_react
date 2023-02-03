@@ -17,6 +17,30 @@
   justify-content: space-between;
 }
 
+.nav__btn {
+  display: none;
+  padding: 8px 14px;
+  background-color: white;
+  border: 0;
+  border-radius: 3px;
+}
+
+.nav__btn:hover {
+  cursor: pointer;
+  background-color: #FF0101;
+}
+
+.nav__btn:hover svg {
+  cursor: pointer;
+  color: white;
+}
+
+.nav__btn svg {
+  margin-top: 3px;
+  width: 1rem;
+  color: #FF0101;
+}
+
 .nav__list {
   display: flex;
   list-style: none;
@@ -26,4 +50,33 @@
 .nav__list li p:hover {
   cursor: pointer;
   color: #FF0101;
+}
+
+.nav--opened {
+  position: absolute;
+  padding: 16px;
+  overflow: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #020203;
+  z-index: 999;
+}
+
+.nav--opened .nav__list {
+  flex-direction: column;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  row-gap: 32px;
+  text-align: center;
+}
+
+@media(max-width: 991px) {
+
+  .nav__btn {
+    display: block;
+    margin-left: auto;
+    z-index: 998;
+  }
 }
