@@ -30,7 +30,7 @@ export const getUserInfos = async(id) => {
 
 export const getUserActivity = async(id) => {
   try {
-    const result = USER_ACTIVITY.find((elm) => elm.id === Number(id))
+    const result = USER_ACTIVITY.find((elm) => elm.userId === Number(id))
     return {data:result}
 
   } catch (err) {
@@ -46,7 +46,7 @@ export const getUserActivity = async(id) => {
 
 export const getUserAverageSessions = async(id) => {
   try {
-    const result = USER_AVERAGE_SESSIONS.find((elm) => elm.id === Number(id))
+    const result = USER_AVERAGE_SESSIONS.find((elm) => elm.userId === Number(id))
     return {data:result}
 
   } catch (err) {
@@ -62,7 +62,7 @@ export const getUserAverageSessions = async(id) => {
 
 export const getUserPerformance = async(id) => {
   try {
-    const result = USER_PERFORMANCE.find((elm) => elm.id === Number(id))
+    const result = USER_PERFORMANCE.find((elm) => elm.userId === Number(id))
     return {data:result}
 
   } catch (err) {

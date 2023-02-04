@@ -1,3 +1,8 @@
+.vertical-nav-container {
+  background-color: #020203;
+  flex-shrink: 0;
+}
+
 .vertical-nav {
   margin-top: 272px;
 }
@@ -10,7 +15,6 @@
 .vertical-nav-box {
   height: 64px;
   width: 64px;
-  border-radius: 6px;
   background-color: #fff;
 }
 

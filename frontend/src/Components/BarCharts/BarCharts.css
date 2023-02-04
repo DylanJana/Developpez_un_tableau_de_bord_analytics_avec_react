@@ -1,0 +1,51 @@
+.graph-activity {
+  width: 100%;
+  padding: 30px;
+}
+
+.graph-activity__legend {
+  display: flex;
+  justify-content: space-between;
+}
+
+.barcharts-legends {
+  column-gap: 32px;
+}
+
+.barcharts-legends__item {
+  column-gap: 10px;
+}
+
+.barcharts-legends__item-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  flex-shrink: 0;
+}
+
+.dot--red {
+  background-color: #FF0101;
+}
+
+.dot--blue {
+  background-color: #282D30;
+}
+
+/*** Custom Recharts***/
+
+.recharts-cartesian-axis-tick-value {
+  fill: #9B9EAC;
+  font-size: 0.87rem;
+}
+
+.recharts-tooltip-label {
+  display: none;
+}
+
+/*** Media Queries ***/
+@media(max-width: 991px) {
+  .graph-activity__legend {
+    flex-direction: column;
+    row-gap: 16px;
+  }
+}

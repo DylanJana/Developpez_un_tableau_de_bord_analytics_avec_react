@@ -7,6 +7,7 @@ import { getData } from '../../utils/getData';
 // Import Components
 import HelloUser from '../HelloUser/HelloUser';
 import NutritiveCard from '../NutritiveCard/NutritiveCard';
+import Graphs from '../Graphs/Graphs';
 
 // Import icons of NutritiveCard
 import energy from '../../assets/svg/energy.svg';
@@ -40,23 +41,11 @@ function Main() {
     return null;
   }
 
-  let nameUser = data.userInfos.firstName;
-
-  // Get scoreUser
-  let scoreUser = data.score;
-
   return (
     <section className='graphs-container'>
-      <HelloUser name={nameUser} score={scoreUser} />
-      <div className='graphs-grid flex justify-content--space-between'>
-        <div>
-          <div>Graph 1</div>
-          <div>
-            <div>Graph 2</div>
-            <div>Graph 3</div>
-            <div>Graph 4</div>
-          </div>
-        </div>
+      <HelloUser name={data.userInfos.firstName} score={data.score} />
+      <div className='graphs-grid-container flex justify-content--space-between'>
+        <Graphs />
         <div className='row-cards'> 
           <NutritiveCard 
             mesure={`${data.keyData.calorieCount}kCal`}

@@ -1,8 +1,8 @@
 .graphs-container {
   flex-grow: 1;
-  padding: 68px 90px 86px 107px;
+  padding: 68px 90px 86px 90px;
 }
 
-.graphs-grid {
+.graphs-grid-container {
   column-gap: 32px;
 }

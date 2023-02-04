@@ -1,0 +1,15 @@
+.graphs-grid {
+  width: 100%;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  align-items: baseline;
+}
+
+.graphs-grid__row {
+  width: 100%;
+  column-gap: 30px;
+}
+
+.graph--tiers {
+  width: 33%;
+}

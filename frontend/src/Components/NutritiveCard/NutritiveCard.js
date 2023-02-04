@@ -1,9 +1,13 @@
 // Import specific css
 import './NutritiveCard.css';
 
+// Import Proptypes to check props type
+import PropTypes from 'prop-types';
+
 function NutritiveCard({ mesure, icon, label }) {
   //classTheme add an color class
   let classTheme;
+
   switch (label) {
     // if label === 'Calories' his theme color is red
     case 'Calories':
@@ -28,7 +32,7 @@ function NutritiveCard({ mesure, icon, label }) {
 
   return (
     <>
-      <div className='row-card flex align-items--center'>
+      <div className='row-card t--grey flex align-items--center br--xs'>
         <div className={`card-box flex justify-content--center align-items--center ${classTheme}`}>
           <img src={icon} alt={label} />
         </div>
@@ -42,3 +46,9 @@ function NutritiveCard({ mesure, icon, label }) {
 }
 
 export default NutritiveCard;
+
+NutritiveCard.propTypes = {
+  mesure: PropTypes.string,
+  icon: PropTypes.any,
+  label: PropTypes.string,
+}
