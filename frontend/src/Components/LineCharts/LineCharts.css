@@ -1,0 +1,32 @@
+.graph-sessions {
+  position: relative;
+  padding: 35px 16px 35px 16px;
+  background-color: #FF0000;
+}
+
+.graph-sessions p {
+  max-width: 10em;
+  color: rgba(255,255,255, 0.5);
+}
+
+.graph-sessions__container {
+  position: relative;
+  z-index: 2;
+}
+
+.graph-sessions .recharts-cartesian-axis-tick-value {
+  fill: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.shadow-box {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  border-radius: 0 6px 6px 0;
+  background-color:rgba(0,0,0, 0.1);
+}

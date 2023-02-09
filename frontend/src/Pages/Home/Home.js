@@ -8,6 +8,9 @@ import './Home.css';
 
 function Home() {
 
+  let body = document.querySelector('body');
+  body.classList.contains('no--scroll') && body.classList.remove('no--scroll');
+
   return (
     <section className="l-container--md">
       <div className="users-heading text--center">

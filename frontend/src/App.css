@@ -89,6 +89,12 @@ a.active {
   line-height: 1.5;
 }
 
+.title--xs-med {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
 .suptitle--lg {
   font-size: 0.94rem;
   font-weight: 500;
@@ -109,6 +115,9 @@ a.active {
 }
 
 /*** Margins ***/
+.ml--sm {
+  margin-left: 20px;
+}
 .mb--xxl {
   margin-bottom: 80px;
 }

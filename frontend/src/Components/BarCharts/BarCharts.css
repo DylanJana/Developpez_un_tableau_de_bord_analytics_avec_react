@@ -33,7 +33,7 @@
 
 /*** Custom Recharts***/
 
-.recharts-cartesian-axis-tick-value {
+.graph-activity .recharts-cartesian-axis-tick-value {
   fill: #9B9EAC;
   font-size: 0.87rem;
 }
