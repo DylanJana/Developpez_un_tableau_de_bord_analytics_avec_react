@@ -45,7 +45,7 @@ function Main() {
     <section className='graphs-container'>
       <HelloUser name={data.userInfos.firstName} score={data.score} />
       <div className='graphs-grid-container flex justify-content--space-between'>
-        <Graphs />
+        <Graphs score={data.score} />
         <div className='row-cards'> 
           <NutritiveCard 
             mesure={`${data.keyData.calorieCount}kCal`}

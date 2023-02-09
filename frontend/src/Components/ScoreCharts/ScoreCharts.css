@@ -1,0 +1,25 @@
+.graph-score {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  height: 263px;
+  min-width: 258px;
+  position: relative;
+}
+
+.score-info {
+  position: absolute;
+  top: 43%;
+  right: 34%;
+  max-width: 5em;
+  text-align: center;
+}
+
+.score-info span {
+  font-size: 1.62rem;
+  font-weight: 700;
+}
+
+.score-info p {
+  font-size: 1rem;
+  font-weight: 500;
+}

@@ -1,12 +1,11 @@
 .graphs-grid {
-  width: 100%;
+  max-width: 835px;
   flex-wrap: wrap;
   row-gap: 30px;
   align-items: baseline;
 }
 
 .graphs-grid__row {
-  width: 100%;
   column-gap: 30px;
 }
 

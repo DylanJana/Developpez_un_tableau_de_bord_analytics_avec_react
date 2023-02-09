@@ -2,7 +2,7 @@
 .row-cards {
   display: flex;
   flex-direction: column;
-  row-gap: 39px;
+  justify-content: space-between;
 }
 
 .row-card {

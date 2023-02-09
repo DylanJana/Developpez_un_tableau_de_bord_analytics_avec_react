@@ -1,5 +1,5 @@
 .header {
-  padding: 18px 91px 12px 28px;
+  padding: 18px 34px 12px 34px;
   background-color: #020203;
 }
 
@@ -8,8 +8,7 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 149px;
-  max-width: 2000px;
-  margin: auto;
+  max-width: 1317px;
 }
 
 .nav {

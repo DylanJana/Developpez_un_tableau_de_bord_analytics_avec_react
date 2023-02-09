@@ -1,10 +1,10 @@
 .vertical-nav-container {
   background-color: #020203;
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 
 .vertical-nav {
-  margin-top: 272px;
+  margin-top: 303px;
 }
 
 .vertical-nav__item {
@@ -33,6 +33,6 @@
 
 
 .copiryght {
-  margin-top: 247px;
+  margin-top: 250px;
   transform: rotate(-90deg);
 }

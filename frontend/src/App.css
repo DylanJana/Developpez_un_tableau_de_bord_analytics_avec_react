@@ -118,6 +118,10 @@ a.active {
 .ml--sm {
   margin-left: 20px;
 }
+
+.ml--md {
+  margin-left: 30px;
+}
 .mb--xxl {
   margin-bottom: 80px;
 }
@@ -136,6 +140,10 @@ a.active {
 
 .mb--xs {
   margin-bottom: 8px;
+}
+
+.mt--md {
+  margin-top: 30px;
 }
 
 .mx--auto {

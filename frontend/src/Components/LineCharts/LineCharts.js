@@ -79,7 +79,7 @@ function LineCharts() {
       <p className='ml--sm title--xs-med'>Durée moyenne des session</p>
       <ResponsiveContainer 
         width='100%' 
-        height={263}
+        height='100%'
         className='graph-sessions__container'>
         <LineChart
           data={data.sessions}
@@ -98,7 +98,7 @@ function LineCharts() {
           stroke="url(#gradientColor)"
           strokeWidth={2} 
           dot={false}
-          activeDot={{fill: 'white'}} />
+          />
         </LineChart>
       </ResponsiveContainer>
       <div className="shadow-box"></div>

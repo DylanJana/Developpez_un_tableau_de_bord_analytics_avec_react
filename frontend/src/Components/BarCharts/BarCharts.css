@@ -1,6 +1,7 @@
 .graph-activity {
-  width: 100%;
+  max-width: 835px;
   padding: 30px;
+  flex-grow: 1;
 }
 
 .graph-activity__legend {

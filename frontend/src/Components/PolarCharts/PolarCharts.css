@@ -1,0 +1,14 @@
+.graph-polar {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  height: 263px;
+  min-width: 258px;
+  background-color: #282D30;
+}
+
+.graph-polar tspan {
+  font-size: 0.75rem;
+  font-weight: 500;
+  fill: #fff;
+  margin-bottom: 16px;
+}
