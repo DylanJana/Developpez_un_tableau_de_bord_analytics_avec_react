@@ -31,7 +31,7 @@ function NutritiveCard({ mesure, icon, label }) {
   }
 
   return (
-    <>
+    <div className='row-cards__column'>
       <div className='row-card t--grey flex align-items--center br--xs'>
         <div className={`card-box flex justify-content--center align-items--center ${classTheme}`}>
           <img src={icon} alt={label} />
@@ -41,7 +41,7 @@ function NutritiveCard({ mesure, icon, label }) {
           <p className="suptitle--md text--tiers">{label}</p>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

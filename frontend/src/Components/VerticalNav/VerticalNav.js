@@ -4,7 +4,7 @@ import './VerticalNav.css';
 function VerticalNav() {
   return (
     <aside className='vertical-nav'>
-        <div className='vertical-nav__item flex'>
+        <div className='vertical-nav__items flex'>
           <div className='vertical-nav-box br--xs mx--auto flex justify-content--center align-items--center'>
             <div className='vertical-nav-box__icon'>
               <svg width="36" height="32" viewBox="0 0 36 32" xmlns="http://www.w3.org/2000/svg">

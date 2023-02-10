@@ -44,6 +44,11 @@
 }
 
 /*** Media Queries ***/
+@media (max-width: 1280px) {
+  .graph-activity {
+    max-width: 100%;
+  }
+}
 @media(max-width: 991px) {
   .graph-activity__legend {
     flex-direction: column;

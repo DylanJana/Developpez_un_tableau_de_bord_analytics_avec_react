@@ -8,7 +8,7 @@ import './Profil.css';
 function Profil() {
   return (
     <main>
-      <Navbar />
+      <Navbar activeClass='Profil' />
       <section className="l-container--full">
         <div className="vertical-nav-container">
           <VerticalNav />

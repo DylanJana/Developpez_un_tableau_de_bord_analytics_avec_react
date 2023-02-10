@@ -12,3 +12,25 @@
 .graph--tiers {
   width: 33%;
 }
+
+/*** Media Queries ***/
+@media(max-width: 1280px) {
+  .graphs-grid {
+    max-width: 100%;
+  }
+
+  .graphs-grid__row {
+    width: 100%;
+  }
+}
+
+@media(max-width: 992px) {
+  .graphs-grid__row {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .graph--tiers {
+    width: 100%;
+  }
+}

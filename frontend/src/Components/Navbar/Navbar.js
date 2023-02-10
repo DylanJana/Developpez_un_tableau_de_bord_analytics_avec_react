@@ -8,7 +8,7 @@ import logo from '../../assets/svg/logo.svg';
 // Import css
 import './Navbar.css';
 
-function Navbar() {
+function Navbar({activeClass}) {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [large, setLarge] = useState(window.innerWidth);
 
@@ -55,12 +55,12 @@ function Navbar() {
           {(toggleMenu || large > 991) &&
             <ul className="nav__list">
               <li>
-                <NavLink className='title--sm text--white' to='/'>
+                <NavLink className={({isActive}) => isActive && activeClass === 'Home' ? 'active title--sm' : 'title--sm text--white'} to='/'>
                   Accueil
                 </NavLink>
               </li>
               <li>
-                <NavLink className={({isActive}) => isActive ? 'active title--sm' : 'title--sm text--white'} to='#'>
+                <NavLink className={({isActive}) => isActive && activeClass === 'Profil' ? 'active title--sm' : 'title--sm text--white'} to='#'>
                   Profil
                 </NavLink>
               </li>

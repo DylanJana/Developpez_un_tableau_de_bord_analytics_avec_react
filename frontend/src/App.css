@@ -158,3 +158,16 @@ a.active {
 .t--grey {
   background-color: #FBFBFB;
 }
+
+@media(max-width: 992px) {
+  .l-container--full {
+    flex-direction: column-reverse;
+  }
+}
+
+@media(max-width: 576px) {
+  
+  .title--xl {
+    font-size: 2.25rem;
+  }
+}

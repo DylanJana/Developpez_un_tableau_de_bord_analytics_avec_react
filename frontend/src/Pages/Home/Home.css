@@ -1,3 +1,14 @@
+.users-container {
+  flex-grow: 1;
+  padding: 68px 90px 86px 90px;
+  min-height: 990px;
+}
+
+.users-body {
+  max-width: 1126px;
+  margin-bottom: 128px;
+}
+
 .users-heading {
   padding-top: 48px;
   padding-bottom: 96px;
@@ -23,4 +34,31 @@
 
 .users a:hover p {
   color: #FF0101;
+}
+
+/*** Media Queries ***/
+@media(max-width: 1400px) {
+  .users-container {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  .users-body {
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 767px) {
+  .users__pic img {
+    height: 240px;
+    width: 240px;
+  }
+}
+
+@media(max-width: 576px) {
+  .users {
+    flex-direction: column;
+    row-gap: 64px;
+    text-align: center;
+  }
 }
