@@ -8,6 +8,14 @@ import logo from '../../assets/svg/logo.svg';
 // Import css
 import './Navbar.css';
 
+/***
+ * Render a horizontal navbar
+ * @param {string} activeClass show if user is on the Home Page or the Profil Page
+ * @return {JSX}
+ * @author Dylan
+ * @version 1.0
+ */
+
 function Navbar({activeClass}) {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [large, setLarge] = useState(window.innerWidth);

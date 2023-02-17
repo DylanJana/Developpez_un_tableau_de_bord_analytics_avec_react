@@ -7,8 +7,11 @@ import PropTypes from 'prop-types';
 // Import specific css
 import './ScoreCharts.css';
 
-/**
- * @param {number} score 
+/** Render Circle Chart of this user score
+ * @param {number} score this score show if user has complete his objectif or not
+ * @return {JSX} 
+ * @author Dylan
+ * @version 1.0
  */
 
 function ScoreCharts({score}) {

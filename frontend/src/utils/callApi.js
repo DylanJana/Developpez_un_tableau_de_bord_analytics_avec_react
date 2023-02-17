@@ -7,8 +7,10 @@ const apiBase = axios.create({
 const baseURL = apiBase.defaults.baseURL;
 
 /** Get user Infos
- * @param {string} 
+ * @param {string} User ID
  * @returns {Array} Data User info
+ * @author Dylan
+ * @version 1.0
  */
 
 export const getUserInfos = async(id) => {
@@ -37,6 +39,8 @@ export const getUserActivity = async(id) => {
 /** Get user Average Sessions
  * @param {string} User ID
  * @returns {Array} Data Session
+ * @author Dylan
+ * @version 1.0
  */
 
 export const getUserAverageSessions = async(id) => {
@@ -51,6 +55,8 @@ export const getUserAverageSessions = async(id) => {
 /** Get user Performance
  * @param {string} User ID
  * @returns {Array} Data Perfomance
+ * @author Dylan
+ * @version 1.0
  */
 
 export const getUserPerformance = async(id) => {

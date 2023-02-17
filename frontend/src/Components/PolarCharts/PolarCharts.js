@@ -12,6 +12,12 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } fro
 // Import specific css
 import './PolarCharts.css';
 
+/***
+ * Render a Polar Charts of this user performances
+ * @return {JSX}
+ * @author Dylan
+ * @version 1.0
+ */
 
 function PolarCharts() {
   // get USER_PERFORMANCE data

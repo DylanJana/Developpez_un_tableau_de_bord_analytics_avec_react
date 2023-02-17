@@ -10,6 +10,8 @@ import {
  * Get Full data of user
  * @param {number} User id
  * @returns {object} Response
+ * @author Dylan
+ * @version 1.0
  */
 
 export const getUserInfos = async(id) => {
@@ -58,6 +60,8 @@ export const getUserAverageSessions = async(id) => {
  * Get user performance
  * @param {number} id User id
  * @returns {object} Response
+ * @author Dylan
+ * @version 1.0
  */
 
 export const getUserPerformance = async(id) => {

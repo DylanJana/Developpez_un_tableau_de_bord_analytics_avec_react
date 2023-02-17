@@ -5,6 +5,12 @@ import Main from "../../Components/Main/Main";
 // Import Specific css
 import './Profil.css';
 
+/**
+ * Render user profile
+ * @returns {JSX}
+ * @author Dylan
+ * @version 1.0
+ */
 function Profil() {
   return (
     <main>

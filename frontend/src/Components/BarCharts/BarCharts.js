@@ -13,6 +13,10 @@ import ToolTipActivity from '../ToolTipActivity/ToolTipActivity';
 // Import specific css
 import './BarCharts.css';
 
+/**
+ * This function display user activity like Bar Chart
+ * @returns {JSX}
+ */
 function BarCharts() {
   // get USER_ACTIVITY data
    // Create my state

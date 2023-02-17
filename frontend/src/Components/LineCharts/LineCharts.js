@@ -13,6 +13,13 @@ import ToolTipSessions from '../ToolTipSessions/ToolTipSessions.js'
 // Import specif css
 import './LineCharts.css';
 
+/***
+ * Render a average session like line graph
+ * @return {JSX}
+ * @author Dylan
+ * @version 1.0
+ */
+
 function LineCharts() {
   // get USER_AVERAGE_SESSIONS data
    // Create my state

@@ -1,6 +1,12 @@
 // Import Css
 import './VerticalNav.css';
 
+/**
+ * Render vertical navbar
+ * @returns {JSX}
+ * @author Dylan
+ * @version 1.0
+ */
 function VerticalNav() {
   return (
     <aside className='vertical-nav'>

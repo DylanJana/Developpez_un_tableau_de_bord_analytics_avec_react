@@ -5,9 +5,11 @@ import PropTypes from 'prop-types';
 import './ToolTipActivity.css'
 /** 
   Customize tootlip barCharts
-  *@param {bool} active
-  *@param {array} payload
+  *@param {bool} active tooltip if active or not ?
+  *@param {array} payload arrays who contains the tooltip content
   *@return {JSX}
+  *@author Dylan
+ * @version 1.0
 */
 
 function ToolTipActivity({active, payload}) {

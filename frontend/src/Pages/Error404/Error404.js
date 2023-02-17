@@ -1,3 +1,10 @@
+/**
+ * Render Error404 page
+ * @returns {JSX}
+ * @author Dylan
+ * @version 1.0
+ */
+
 function Error404() {
   return (
     <div>

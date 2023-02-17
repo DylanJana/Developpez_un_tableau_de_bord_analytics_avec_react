@@ -4,6 +4,15 @@ import './NutritiveCard.css';
 // Import Proptypes to check props type
 import PropTypes from 'prop-types';
 
+/***
+ * Render a horizontal navbar
+ * @param {string} mesures matches element quantity 
+ * @param {string} label matches element name
+ * @return {JSX}
+ * @author Dylan
+ * @version 1.0
+ */
+
 function NutritiveCard({ mesure, icon, label }) {
   //classTheme add an color class
   let classTheme;

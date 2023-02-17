@@ -10,6 +10,12 @@ import './Home.css';
 import Navbar from "../../Components/Navbar/Navbar";
 import VerticalNav from "../../Components/VerticalNav/VerticalNav";
 
+/**
+ * Render Home page
+ * @returns {JSX}
+ * @author Dylan 
+ * @version 1.0  
+ */
 function Home() {
 
   let body = document.querySelector('body');

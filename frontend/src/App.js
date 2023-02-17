@@ -6,6 +6,12 @@ import Home from './Pages/Home/Home';
 import Profil from './Pages/Profil/Profil';
 import Error404 from './Pages/Error404/Error404';
 
+/**
+ * Render routes of app
+ * @returns {JSX}
+ * @author Dylan
+ * @version 1.0
+ */
 function App() {
   return (
     <div className="App">

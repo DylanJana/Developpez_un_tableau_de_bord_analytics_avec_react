@@ -20,6 +20,8 @@ import './Main.css';
 /***
  * Render a profil content of user
  * @return {JSX}
+ * @author Dylan
+ * @version 1.0
  */
 function Main() {
   // Create my state
