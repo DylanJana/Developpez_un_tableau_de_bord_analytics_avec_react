@@ -1,2 +1,2 @@
-#Dashboard SportSee
-<img src='https://forthebadge.com/images/badges/uses-css.svg' />
+# Dashboard SportSee
+<img src='./frontend/src/assets/svg/use-react.svg' />
