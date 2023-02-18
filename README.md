@@ -34,3 +34,5 @@
 ## Navigate to Sportsee App
 - on Home Page, choice your user
 - You have access to differents graph of your user 
+
+<img src='./frontend/src/assets/images/sportsee-home.webp' alt='Home page of SportSee app' /> 
