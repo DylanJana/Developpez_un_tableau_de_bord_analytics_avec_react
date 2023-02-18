@@ -1,2 +1,2 @@
 #Dashboard SportSee
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+<img src='https://forthebadge.com/images/badges/uses-css.svg' />
