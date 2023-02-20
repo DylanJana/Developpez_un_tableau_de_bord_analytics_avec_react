@@ -23,6 +23,9 @@ a.active {
 }
 
 /*** Colors ***/
+.text--black {
+  color: #000;
+}
 .text--primary {
   color: #282D30;
 }

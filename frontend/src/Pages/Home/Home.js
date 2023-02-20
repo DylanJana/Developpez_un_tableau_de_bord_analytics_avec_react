@@ -32,7 +32,7 @@ function Home() {
         <div className="users-container">
           <div className="users-body">
             <div className="users-heading text--center">
-              <h1 className="title--xl">Bienvenue sur <span className="text--secondary">SportSee</span></h1>
+              <h1 className="title--xl text--black">Bienvenue sur <span className="text--secondary">SportSee</span></h1>
             </div>
             <div className="users">
               <div>
