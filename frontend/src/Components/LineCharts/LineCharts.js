@@ -36,12 +36,7 @@ function LineCharts() {
      dataAsk();
    },[id]);
 
-   // If user I doesn't have data return null
-   if(data.length === 0) {
-     return null;
-   }
-
-   data.sessions.map((dataItem) => {
+   data?.sessions?.map((dataItem) => {
     switch(dataItem.day) {
       case 1:
         return dataItem.day = 'L';

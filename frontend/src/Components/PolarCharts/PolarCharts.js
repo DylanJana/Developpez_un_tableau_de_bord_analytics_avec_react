@@ -30,8 +30,8 @@ function PolarCharts() {
   useEffect(() => {
     const dataAsk = async () => {
       const requestData = await getData("USER_PERFORMANCE", id);
-      let essentialDatas = requestData.data.data;
-      essentialDatas.map((data) => {
+      let essentialDatas = requestData?.data?.data;
+      essentialDatas?.map((data) => {
         // For each data, if kind key egal to an number, give a name match to specify sector
         switch (data.kind) {
           // If kind is egal to 1, give name 'Cardio' at this type

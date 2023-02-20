@@ -1,6 +1,6 @@
 import './App.css';
 // Import Routes, Route to manage routes in my app
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, Navigate} from 'react-router-dom';
 // Import Differents Pages
 import Home from './Pages/Home/Home';
 import Profil from './Pages/Profil/Profil';
@@ -19,8 +19,9 @@ function App() {
         <Route path='/' element={<Home />} />
         {/** Dynamically path with user id */}
         <Route path='/user/:id' element={<Profil />} />
+        <Route path='/404' element={<Error404 />} />
         {/** This route is use when page doesn't exist */}
-        <Route path='*' element={<Error404 />} />
+        <Route path='*' element={<Navigate to="404"/>} />
       </Routes>
     </div>
   );
