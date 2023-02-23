@@ -31,31 +31,30 @@ function LineCharts() {
    useEffect(() => {
      const dataAsk = async () => {
        const requestData = await getData("USER_AVERAGE_SESSIONS", id);
-       requestData ? setData(requestData.data) : console.log("error")
+       requestData ? setData(requestData.data) : console.log("error");
+       requestData.data?.sessions?.map((dataItem) => {
+        switch(dataItem.day) {
+          case 1:
+            return dataItem.day = 'L';
+          case 2:
+            return dataItem.day = 'M';
+          case 3:
+            return dataItem.day = 'M';
+          case 4:
+            return dataItem.day = 'J';
+          case 5:
+            return dataItem.day = 'V';
+          case 6:
+            return dataItem.day = 'S';
+          case 7:
+            return dataItem.day = 'D';
+          default:
+            return requestData.data.sessions
+        }
+       })
      };
      dataAsk();
    },[id]);
-
-   data?.sessions?.map((dataItem) => {
-    switch(dataItem.day) {
-      case 1:
-        return dataItem.day = 'L';
-      case 2:
-        return dataItem.day = 'M';
-      case 3:
-        return dataItem.day = 'M';
-      case 4:
-        return dataItem.day = 'J';
-      case 5:
-        return dataItem.day = 'V';
-      case 6:
-        return dataItem.day = 'S';
-      case 7:
-        return dataItem.day = 'D';
-      default:
-        return data.sessions
-    }
-   })
   
    // Get position of my cursor in my element and create shadow box
    const backgroundChange = (e) => {
@@ -84,7 +83,7 @@ function LineCharts() {
         height='100%'
         className='graph-sessions__container'>
         <LineChart
-          data={data.sessions}
+          data={data?.sessions}
         >
           <defs>
             <linearGradient id="gradientColor">

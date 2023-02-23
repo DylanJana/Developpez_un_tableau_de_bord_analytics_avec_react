@@ -28,8 +28,8 @@ function Main() {
   const [data, setData] = useState([]);
   // Get id of my user with useParams. useParams get id in my url
   const {id} = useParams();
-  const navigate = useNavigate();
 
+  const navigate = useNavigate();
   // useEffect to call getData function and get my data
   useEffect(() => {
       const dataAsk = async () => {
@@ -37,41 +37,39 @@ function Main() {
         requestData?.data ? setData(requestData.data) : navigate("/404");
       };
      dataAsk();
-  },[id]);
+  },[id, navigate]);
 
-  return (
-   
-      <section className='graphs-container'>
-      <HelloUser name={data?.userInfos?.firstName} score={data?.score} />
-      <div className='graphs-grid-container flex justify-content--space-between'>
-        <Graphs score={data?.score} />
-        <div className='row-cards'> 
-          <NutritiveCard 
-            mesure={`${data?.keyData?.calorieCount}kCal`}
-            icon={energy}
-            label={"Calories"}
-            />
+    return (
+     
+        <section className='graphs-container'>
+        <HelloUser name={data?.userInfos?.firstName} score={data?.score} />
+        <div className='graphs-grid-container flex justify-content--space-between'>
+          <Graphs score={data?.score} />
+          <div className='row-cards'> 
             <NutritiveCard 
-            mesure={`${data?.keyData?.proteinCount}g`}
-            icon={protein}
-            label={"Protéines"}
-            />
-            <NutritiveCard 
-            mesure={`${data?.keyData?.carbohydrateCount}g`}
-            icon={glucides}
-            label={"Glucides"}
-            />
-            <NutritiveCard 
-            mesure={`${data?.keyData?.lipidCount}g`}
-            icon={lipides}
-            label={"Lipides"}
-            />
+              mesure={`${data?.keyData?.calorieCount}kCal`}
+              icon={energy}
+              label={"Calories"}
+              />
+              <NutritiveCard 
+              mesure={`${data?.keyData?.proteinCount}g`}
+              icon={protein}
+              label={"Protéines"}
+              />
+              <NutritiveCard 
+              mesure={`${data?.keyData?.carbohydrateCount}g`}
+              icon={glucides}
+              label={"Glucides"}
+              />
+              <NutritiveCard 
+              mesure={`${data?.keyData?.lipidCount}g`}
+              icon={lipides}
+              label={"Lipides"}
+              />
+          </div>
         </div>
-      </div>
-    </section> 
-  
-    
-  )
-}
+      </section> 
+    )
+  }
 
 export default Main;

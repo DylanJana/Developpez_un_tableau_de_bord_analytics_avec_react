@@ -16,8 +16,8 @@ function ToolTipActivity({active, payload}) {
   if(active) {
     return (
       <div className='tooltip'>
-        <p className='mb--md suptitle'>{payload[0].value}kg</p>
-        <p className='suptitle'>{payload[1].value}Kcal</p>
+        <p className='mb--md suptitle'>{payload[0]?.value}kg</p>
+        <p className='suptitle'>{payload[1]?.value}Kcal</p>
       </div>
     ) 
   }

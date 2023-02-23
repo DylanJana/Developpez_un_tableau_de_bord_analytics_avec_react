@@ -63,7 +63,7 @@ function PolarCharts() {
   }, [id]);
 
   // If user I doesn't have data return null
-  if (data.length === 0) {
+  if (data?.length === 0) {
     return null;
   }
 

@@ -28,20 +28,14 @@ function BarCharts() {
    useEffect(() => {
      const dataAsk = async () => {
        const requestData = await getData("USER_ACTIVITY", id);
-       requestData ? setData(requestData.data) : console.log("error")
-     };
-     dataAsk();
+       requestData ? setData(requestData.data) : console.log("error");
+         // Change my format date to a number
+        let dataSessionLength = requestData?.data?.sessions?.length;
+        for(let i = 0; i < dataSessionLength; i++) 
+          {requestData.data.sessions[i].day = i + 1};
+          };
+          dataAsk();
    },[id]);
- 
-   // If user I doesn't have data return null
-   if(data.length === 0) {
-     return null;
-   }
-
-   // Change my format date to a number
-   let dataSessionLength = data.sessions.length;
-   for(let i = 0; i < dataSessionLength; i++) 
-    {data.sessions[i].day = i + 1};
 
   return (
     <div className='t--grey br--xs graph-activity'>
@@ -60,7 +54,7 @@ function BarCharts() {
       </div>
       <ResponsiveContainer height={200}>
         <BarChart
-          data={data.sessions}
+          data={data?.sessions}
           barGap={8}
         >
           <CartesianGrid vertical={false} strokeDasharray="1 1" />
