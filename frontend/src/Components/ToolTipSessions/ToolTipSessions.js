@@ -16,7 +16,7 @@ function ToolTipActivity({active, payload}) {
   if(active) {
     return (
       <div className='tooltip-sessions'>
-        <span className='suptitle'>{payload[0].value} min</span>
+        <span className='suptitle'>{payload?.[0].value} min</span>
       </div>
     ) 
   }

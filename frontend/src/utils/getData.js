@@ -5,12 +5,12 @@ import {
   getUserPerformance
 } from "./dataMockCall";
 
-  // import { 
-  //   getUserInfos, 
-  //   getUserActivity, 
-  //   getUserAverageSessions,
-  //   getUserPerformance
-  // } from "./callApi";
+// import { 
+//   getUserInfos, 
+//   getUserActivity, 
+//   getUserAverageSessions,
+//   getUserPerformance
+// } from "./callApi";
 
 /** Switch data return in function of parameter type result
  * @param {string} type of data

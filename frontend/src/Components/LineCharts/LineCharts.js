@@ -31,7 +31,7 @@ function LineCharts() {
    useEffect(() => {
      const dataAsk = async () => {
        const requestData = await getData("USER_AVERAGE_SESSIONS", id);
-       requestData ? setData(requestData.data) : console.log("error");
+       requestData ? setData(requestData?.data) : console.log("error");
        requestData.data?.sessions?.map((dataItem) => {
         switch(dataItem.day) {
           case 1:
@@ -49,7 +49,7 @@ function LineCharts() {
           case 7:
             return dataItem.day = 'D';
           default:
-            return requestData.data.sessions
+            return requestData?.data?.sessions
         }
        })
      };

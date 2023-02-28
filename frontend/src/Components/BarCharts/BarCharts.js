@@ -28,7 +28,7 @@ function BarCharts() {
    useEffect(() => {
      const dataAsk = async () => {
        const requestData = await getData("USER_ACTIVITY", id);
-       requestData ? setData(requestData.data) : console.log("error");
+       requestData ? setData(requestData?.data) : console.log("error");
          // Change my format date to a number
         let dataSessionLength = requestData?.data?.sessions?.length;
         for(let i = 0; i < dataSessionLength; i++) 
