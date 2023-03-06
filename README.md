@@ -6,9 +6,8 @@
   <img src='./frontend/src/assets/svg/built-with-pixels.svg' alt='badge with pixels' /> 
 </p> 
 
-## Start
-### Install NodeJS & npm with command :
-  - npm install -g npm
+## Prerequis
+### Install NodeJS :
 ### Install yarn via npm with command :
   - npm install --global yarn 
 
@@ -31,7 +30,7 @@
   - npm install
   - npm start
 
-## Navigate to Sportsee App
+## Navigate to Sportsee App : http://localhost:3001/
 - on Home Page, choice your user
 - You have access to differents graph of your user 
 
