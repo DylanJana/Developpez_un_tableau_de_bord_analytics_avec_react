@@ -34,4 +34,8 @@
 - on Home Page, choice your user
 - You have access to differents graph of your user 
 
+## Using Api data or Data mock :
+- Go to apiRequest.js
+- Line 21, switch value of variable : usingApi of false at true
+
 <img src='./frontend/src/assets/images/sportsee-home.webp' alt='Home page of SportSee app' /> 
