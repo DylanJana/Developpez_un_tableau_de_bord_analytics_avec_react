@@ -270,3 +270,4 @@ module.exports = {
   USER_AVERAGE_SESSIONS,
   USER_PERFORMANCE
 }
+

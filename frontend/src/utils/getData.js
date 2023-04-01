@@ -3,14 +3,7 @@ import {
   getUserActivity, 
   getUserAverageSessions,
   getUserPerformance
-} from "./dataMockCall";
-
-// import { 
-//   getUserInfos, 
-//   getUserActivity, 
-//   getUserAverageSessions,
-//   getUserPerformance
-// } from "./callApi";
+} from "./apiRequest";
 
 /** Switch data return in function of parameter type result
  * @param {string} type of data
