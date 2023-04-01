@@ -17,7 +17,7 @@ const apiBase = axios.create({
 
 const baseURL = apiBase.defaults.baseURL;
 
-// Variable, to choose between API Data or Mock Data
+// Variable, to choose between API Data or Mock Data. True you use api data false use mock data.
 const usingApi = true;
 
 /**
