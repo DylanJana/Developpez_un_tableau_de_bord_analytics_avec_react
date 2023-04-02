@@ -6,7 +6,7 @@ import {
   USER_PERFORMANCE
 } from '../dataMock.js';
 
-import { formatedPerf, formatedDate } from './formatData.js';
+import { formatedPerf, formatedDate, formatedNutritive } from './formatData.js';
 
 // Import essentiels to use axios
 import axios from "axios";
@@ -30,16 +30,23 @@ const usingApi = true;
 
 
 export const getUserInfos = async(id) => {
+  let infoNutritive = null;
   if(usingApi === true) {
     try {
       const result = await apiBase.get(`${baseURL}/user/${id}`);
-      return result.data;
+      infoNutritive = result.data.data
     } catch(err) {
-        console.log(err)
+      console.log(err)
+      window.location.href = "/404"
     }
   } else {
-    const result = USER_MAIN_DATA.find((elm) => elm.id === Number(id));
-    return {data:result}
+    infoNutritive = USER_MAIN_DATA.find((elm) => elm.id === Number(id));
+  }
+
+  if(infoNutritive) {
+    return formatedNutritive(infoNutritive);
+  } else {
+    window.location.href = "/404"
   }
 };
 
@@ -55,7 +62,8 @@ export const getUserActivity = async(id) => {
       const result = await apiBase.get(`${baseURL}/user/${id}/activity`);
       return result.data;
     } catch(err) {
-        console.log(err)
+      console.log(err)
+      window.location.href = "/404"
     }
   } else {
     const result = USER_ACTIVITY.find((elm) => elm.userId === Number(id))
@@ -77,12 +85,17 @@ export const getUserAverageSessions = async(id) => {
       userSession = result.data.data.sessions;
     } catch(err) {
         console.log(err)
+        window.location.href = "/404"
     }
   } else {
     userSession = USER_AVERAGE_SESSIONS.find((elm) => elm.userId === Number(id))
+    if(userSession) {
     userSession = userSession.sessions;
+    } else {
+      window.location.href = "/404"
+    }
   }
-  return formatedDate(userSession)
+    return formatedDate(userSession)
 };
 
 /**
@@ -101,6 +114,7 @@ export const getUserPerformance = async(id) => {
       userPerf = getData.data.data;
     } catch(err) {
         console.log(err)
+        window.location.href = "/404"
     }
   } else {
     userPerf = USER_PERFORMANCE.find((elm) => elm.userId === Number(id));

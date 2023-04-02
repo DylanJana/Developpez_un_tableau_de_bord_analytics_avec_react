@@ -31,7 +31,7 @@ function LineCharts() {
    useEffect(() => {
      const dataAsk = async () => {
        const requestData = await getData("USER_AVERAGE_SESSIONS", id);
-       requestData ? setData(requestData) : console.log("error");
+       requestData && setData(requestData);
      };
      dataAsk();
    },[id]);

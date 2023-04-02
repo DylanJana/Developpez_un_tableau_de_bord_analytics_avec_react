@@ -1,6 +1,31 @@
 import PropTypes from "prop-types";
 
 /** 
+ * @param {object} nutritive
+ * @returns {object}
+ */
+
+export const formatedNutritive = (nutritive) => {
+  const {calorieCount, carbohydrateCount, lipidCount, proteinCount} = nutritive.keyData;
+  if(nutritive.keyData.hasOwnProperty('calorieCount')){
+    const formatObj = {
+      calorie: calorieCount + 'kcal',
+      labelCalories: "Calories",
+      glucides: carbohydrateCount + 'g',
+      labelGlucides: "Glucides", 
+      lipides: lipidCount + 'g', 
+      labelLipides: 'Lipides',
+      proteines: proteinCount + 'g',
+      labelProteines: 'Proteines'
+    };
+    nutritive.keyData = formatObj;
+    return nutritive;
+  }
+  return nutritive
+}
+
+
+/** 
  * @param {object} performances 
  * @returns {object}
  */
@@ -34,6 +59,11 @@ export const formatedPerf = (performances) => {
       return essentialDatas
 }
 
+/** 
+ * @param {array} dayDate 
+ * @returns {array}
+ */
+
 export const formatedDate = (dayDate) => {
   dayDate?.map((dataItem) => {
     switch(dataItem.day) {
@@ -56,6 +86,10 @@ export const formatedDate = (dayDate) => {
     }
   })
   return dayDate
+}
+
+formatedNutritive.PropTypes = {
+  nutritive: PropTypes.object
 }
 
 formatedPerf.PropTypes = {

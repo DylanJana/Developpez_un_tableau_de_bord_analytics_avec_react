@@ -14,35 +14,11 @@ import PropTypes from 'prop-types';
  */
 
 function NutritiveCard({ mesure, icon, label }) {
-  //classTheme add an color class
-  let classTheme;
-
-  switch (label) {
-    // if label === 'Calories' his theme color is red
-    case 'Calories':
-      classTheme = 't--secondary';
-      break
-    // if label === 'Protéines' his theme color is blue
-    case 'Protéines':
-      classTheme = 't--tiers'
-      break
-    // if label === 'Glucides' his theme color is yellow
-    case 'Glucides':
-      classTheme = 't--quarts'
-      break
-    // if label === 'Lipides' his theme color is pink
-    case 'Lipides':
-      classTheme = 't--fifth'
-      break
-    // else this item has not theme color
-    default:
-      classTheme= ''
-  }
 
   return (
     <div className='row-cards__column'>
       <div className='row-card t--grey flex align-items--center br--xs'>
-        <div className={`card-box flex justify-content--center align-items--center ${classTheme}`}>
+        <div className={`card-box flex justify-content--center align-items--center ${label}`}>
           <img src={icon} alt={label} />
         </div>
         <div>

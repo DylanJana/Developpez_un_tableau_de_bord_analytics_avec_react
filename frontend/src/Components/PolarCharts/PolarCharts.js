@@ -30,7 +30,7 @@ function PolarCharts() {
   useEffect(() => {
     const dataAsk = async () => {
       const requestData = await getData("USER_PERFORMANCE", id);
-     requestData ? setData(requestData) : console.log("error")
+     requestData && setData(requestData)
     };
     dataAsk();
 

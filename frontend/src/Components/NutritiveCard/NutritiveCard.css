@@ -18,19 +18,19 @@
 }
 
 /*** Themes color ***/
-.t--secondary {
+.Calories {
   background-color: rgba(255, 0, 0, 0.06);
 }
 
-.t--tiers {
+.Proteines {
   background-color: rgba(74, 184, 255, 0.1);
 }
 
-.t--quarts {
+.Glucides {
   background-color: rgba(249, 206, 35, 0.10);
 }
 
-.t--fifth {
+.Lipides {
   background-color: rgba(253, 81, 129, 0.10);
 }
 

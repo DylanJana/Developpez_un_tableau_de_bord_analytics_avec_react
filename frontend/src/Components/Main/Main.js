@@ -1,6 +1,6 @@
 // Import method of react and react-router-dom
 import { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 //Import getData to get my data
 import { getData } from '../../utils/getData';
@@ -29,15 +29,14 @@ function Main() {
   // Get id of my user with useParams. useParams get id in my url
   const {id} = useParams();
 
-  const navigate = useNavigate();
   // useEffect to call getData function and get my data
   useEffect(() => {
       const dataAsk = async () => {
         const requestData = await getData("USER_MAIN_DATA", id);
-        requestData?.data ? setData(requestData.data) : navigate("/404");
+        requestData && setData(requestData);
       };
      dataAsk();
-  },[id, navigate]);
+  },[id]);
 
     return (
      
@@ -47,24 +46,24 @@ function Main() {
           <Graphs score={data?.score} />
           <div className='row-cards'> 
             <NutritiveCard 
-              mesure={`${data?.keyData?.calorieCount}kCal`}
+              mesure={data?.keyData?.calorie}
               icon={energy}
-              label={"Calories"}
+              label={data?.keyData?.labelCalories}
               />
               <NutritiveCard 
-              mesure={`${data?.keyData?.proteinCount}g`}
+              mesure={data?.keyData?.proteines}
               icon={protein}
-              label={"Protéines"}
+              label={data?.keyData?.labelProteines}
               />
               <NutritiveCard 
-              mesure={`${data?.keyData?.carbohydrateCount}g`}
+              mesure={data?.keyData?.glucides}
               icon={glucides}
-              label={"Glucides"}
+              label={data?.keyData?.labelGlucides}
               />
               <NutritiveCard 
-              mesure={`${data?.keyData?.lipidCount}g`}
+              mesure={data?.keyData?.lipides}
               icon={lipides}
-              label={"Lipides"}
+              label={data?.keyData?.labelLipides}
               />
           </div>
         </div>
